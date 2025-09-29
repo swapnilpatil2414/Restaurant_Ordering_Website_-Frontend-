@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites - Restaurant</title>
+  <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🍽️ Delicious Bites</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Delicious Bites</h1>
+    <p>Order your favorite dishes online!</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <!-- Menu Items -->
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Classic cheese and tomato pizza</p>
+        <span class="price">$8</span>
+        <button onclick="addToCart('Margherita Pizza', 8)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://th.bing.com/th?id=OIF.8P2%2bcdkwwifOzrGMJS3TPA&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>Grilled beef patty with cheese</p>
+        <span class="price">$6</span>
+        <button onclick="addToCart('Cheese Burger', 6)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.Z4Uhv8_-kzoBrUVjk3tu1gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pasta">
+        <h3>Spaghetti Pasta</h3>
+        <p>Italian style pasta with tomato sauce</p>
+        <span class="price">$7</span>
+        <button onclick="addToCart('Spaghetti Pasta', 7)">Add to Cart</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg" alt="Salad">
+        <h3>Caesar Salad</h3>
+        <p>Fresh lettuce with creamy dressing</p>
+        <span class="price">$5</span>
+        <button onclick="addToCart('Caesar Salad', 5)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div class="cart-items"></div>
+    <h3 class="total">Total: $0</h3>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
